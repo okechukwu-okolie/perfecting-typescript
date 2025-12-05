@@ -1,5 +1,9 @@
 import React from 'react'
 import { Badge } from './components/04_AsConstVariable'
+import { Button } from './components/05_ComponentProps'
+import { Counter } from './components/06_state'
+import { FormExample } from './components/07_events'
+import { TypedReducer } from './components/08_typedUseReducer'
 // import { UserCard } from './components/01_requiredOptionalProps'
 // import GreetA, { GreetB } from './components/02_defaultProps'
 // import { NewPanel, NewPanel2, Panel } from './components/03_childrenReactNode'
@@ -31,7 +35,12 @@ const App = () => {
     // </NewPanel2>
     // </div>
     <div>
-      <Badge label="Default Badge" variant='tertiary'/>
+      <Badge label="Default Badge" variant=''/>
+      <Button type='range' onChange={()=>alert('clicked')} variant='secondary'/>
+
+        <Counter/>
+        <FormExample/>
+        <TypedReducer />
     </div>
   )
 }
