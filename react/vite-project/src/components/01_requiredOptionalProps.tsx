@@ -11,8 +11,7 @@ interface UserCardProps{
 export function UserCard({id, name, subtitle}: UserCardProps){
 
     const displayName = name ?? 'Guest User';
-    return(
-        <div>
+    return( <div>
             <p>#{id}</p>
             <strong>{displayName}</strong>
             {subtitle ? <div>{subtitle}</div> : null}
